@@ -1,5 +1,7 @@
 # comfyui-hervinai-none
 
+**中文** | [English](README_EN.md)
+
 让 ComfyUI 的 **Load Image / Load Audio / Load Video** 支持**空输入**。
 
 文件下拉框不选任何文件时，节点不再抛异常，而是把所有输出置为 `None`。
@@ -71,7 +73,8 @@ ComfyUI/
         ├── requirements.txt
         ├── web/
         │   └── hervinai_none.js
-        └── README.md
+        ├── README.md
+        └── README_EN.md
 ```
 
 装好后**完全重启** ComfyUI（前端扩展需要重新加载，刷新浏览器页面不够）。
@@ -607,4 +610,5 @@ if (!isImageUploadInput(n)) throw Error('Image upload widget requires imageInput
 | `hervinai_none_nodes.py` | 后端节点实现（V1 / V3 双路径） |
 | `web/hervinai_none.js` | 前端补丁：默认空值 + 音频播放器补齐 |
 | `requirements.txt` | 无额外依赖，留空 |
-| `README.md` | 本文档 |
+| `README.md` | 本文档（中文） |
+| `README_EN.md` | 英文文档 |
