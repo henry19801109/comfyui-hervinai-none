@@ -1,0 +1,2 @@
+# 本节点包只依赖 ComfyUI 核心已提供的库（numpy / torch / Pillow / av），
+# 无需额外安装任何依赖，因此这里留空。
