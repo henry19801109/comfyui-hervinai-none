@@ -11,6 +11,11 @@
 **核心节点完全不受影响**——本包不覆盖、不修改 `LoadImage` / `LoadAudio` /
 `LoadVideo`，只是新增了三个独立节点。删掉本目录就等于卸载。
 
+![三个节点拖到画布上，文件下拉框默认都是空的 none](docs/nodes-empty-by-default.png)
+
+> 上图：三个节点刚拖到画布上时的样子。文件下拉框默认显示 `none`（空），
+> 不会自动填上 input 目录里的第一个文件。
+
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-Custom%20Node-3b82f6)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -612,3 +617,4 @@ if (!isImageUploadInput(n)) throw Error('Image upload widget requires imageInput
 | `requirements.txt` | 无额外依赖，留空 |
 | `README.md` | 本文档（中文） |
 | `README_EN.md` | 英文文档 |
+| `docs/` | 文档用到的截图 |

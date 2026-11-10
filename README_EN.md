@@ -12,6 +12,12 @@ workflows: a branch with no asset simply goes dead, without tearing down the who
 `LoadImage` / `LoadAudio` / `LoadVideo`; it only adds three new standalone nodes.
 Deleting the directory uninstalls it.
 
+![The three nodes on the canvas, with every file dropdown defaulting to an empty none](docs/nodes-empty-by-default.png)
+
+> The screenshot above shows the three nodes right after being dropped on the canvas.
+> Every file dropdown reads `none` (empty) — none of them auto-fills the first file from
+> the `input` directory.
+
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-Custom%20Node-3b82f6)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -664,3 +670,4 @@ which reads as "frontend patch loaded: LoadVideoHervinai".
 | `requirements.txt` | No extra dependencies, intentionally empty |
 | `README.md` | The Chinese documentation |
 | `README_EN.md` | This document |
+| `docs/` | Screenshots used by the documentation |
